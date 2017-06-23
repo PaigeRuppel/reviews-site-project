@@ -41,7 +41,7 @@ public class Review {
 		return episodeNumber;
 	}
 	
-	public String getTitle() {
+	public String getEpisodeTitle() {
 		return episodeTitle;
 	}
 	
