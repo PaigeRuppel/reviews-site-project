@@ -4,8 +4,15 @@
 <title>Star Trek TNG Season 5 Reviews</title>
 </head>
 <body>
-	<h1>Reviews as map</h1>
-	<p th:text="'Raw: ' + ${reviewsAsMap}" />
+	<h1>Star Trek The Next Generation Season 5 Reviews</h1>
+	
+	<div th:each="reviews: ${reviewsAsCollection}"> <h1 th:text="${reviews.getTitle()} />
+		<p th:text=reviews: ${reviewsAsCollection}" + "${reviews.getDescription()}"/>
+
+	</li>
+	
+	</div>
+
 
 </body>
 <footer>All STAR TREK trademarks and logos are owned by CBS Studios Inc.</footer>

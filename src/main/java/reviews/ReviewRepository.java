@@ -26,12 +26,15 @@ public class ReviewRepository {
 				+ "Leuitenant Worf fights on the side of the Gowrons against the Duras clan. Captain Picard and the Enterprise investigate possible Romulan interference in the conflict and must thwart a Romulan ploy to overtake the Vulcan empire. "
 				+ "Favorite part: Data learns the Vulcan nerve pinch and gains a measured nod of approval from none other than Spock.");
 		season5Episode1.setReviewRating("5 Stars");
+		season5Episode1.setImageUrl("/static/images/pv501.jpg");
 		Review season5Episode2 = new Review(502, "5", "02", "Darmok", "09/30/1991");
 		season5Episode2.setDescription("Lorem ipsum blah blah blah Favorite part: Riker's dumbfounded face when Picard saves the day in garbled alien metaphor speak.");
 		season5Episode2.setReviewRating("4 Stars");
+		season5Episode2.setImageUrl("/static/images/pv502.jpg");
 		Review season5Episode3 = new Review(503, "5", "03", "Ensign Ro", "10/07/1991");
 		season5Episode3.setDescription("Lorem ipsum blah blah blah");
 		season5Episode3.setReviewRating("4 Stars");
+		season5Episode3.setImageUrl("/static/images/pv503.jpg");
 		reviewsMap.put(501L, season5Episode1);
 		reviewsMap.put(502L, season5Episode2);
 		reviewsMap.put(503L, season5Episode3);
