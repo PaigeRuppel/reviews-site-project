@@ -11,10 +11,10 @@ public class Review {
 	private String episodeNumber; // season and episode number
 	private String episodeTitle; // episode title
 	private String imageUrl;      // this may not be correct?
-	private String reviewContent; // review content
+	private String reviewRating; // review content
 	private String description; // brief synopsis of the episode
 	private String airDate; // airDate
-	private String reviewDate; // reviewDate
+//	private String reviewDate; // reviewDate
 	
 	Collection<String> tags = new ArrayList<String>(); // this will feature characters, themes, races, etc.
 	
@@ -26,7 +26,7 @@ public class Review {
 		this.episodeTitle = episodeTitle;
 		this.airDate = airDate;
 		description = "blank";
-		reviewDate = "today";
+//		reviewDate = "today";
 	}
 	
 	public long getId() {
@@ -64,20 +64,20 @@ public class Review {
 	}
 	
 	
-	public String getReviewContent() {	// actual review will live here
-		return reviewContent;
+	public String getReviewRating() {	// actual review will live here
+		return reviewRating;
 	}
-	public void setReviewContent(String reviewContent) {
-		this.reviewContent = reviewContent;
+	public void setReviewRating(String reviewRating) {
+		this.reviewRating = reviewRating;
 	}
 
-
-	public String getReviewDate() {	
-		return reviewDate;
-	}
-	public void setReviewDate(String reviewDate) {
-		this.reviewDate = reviewDate;
-	}
+//
+//	public String getReviewDate() {	
+//		return reviewDate;
+//	}
+//	public void setReviewDate(String reviewDate) {
+//		this.reviewDate = reviewDate;
+//	}
 
 	public Collection<String> getTags() {
 		return tags;
