@@ -1,0 +1,12 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+.title {
+	font-family: sans-serif;
+}
+
+.title a {
+	text-decoration: none;
+}

@@ -10,7 +10,7 @@ public class Review {
 	private String season;
 	private String episodeNumber; // season and episode number
 	private String episodeTitle; // episode title
-	private String imageUrl;      // this may not be correct?
+	private String imageUrl;      
 	private String reviewRating; // review content
 	private String description; // brief synopsis of the episode
 	private String airDate; // airDate

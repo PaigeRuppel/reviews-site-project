@@ -36,9 +36,8 @@ public class ReviewsController {
 	// template. This method should expect an "id" query parameter in order to
 	// select a specific review.
 	@RequestMapping(value = "/review")
-	@ResponseBody
 	public String fetchSingleReview(@RequestParam("id") long id, Model model) {
-		model.addAttribute("singleReview", revRep.findOne(id));
+		model.addAttribute("review", revRep.findOne(id));
 	    return "singleReview";
 	}
 	
