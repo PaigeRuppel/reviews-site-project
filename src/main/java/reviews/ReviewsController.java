@@ -35,7 +35,7 @@ public class ReviewsController {
 	// puts one of your reviews into the model, forwarding to a "review"
 	// template. This method should expect an "id" query parameter in order to
 	// select a specific review.
-	@RequestMapping(value = "/review")
+	@RequestMapping("/review")
 	public String fetchSingleReview(@RequestParam("id") long id, Model model) {
 		model.addAttribute("review", revRep.findOne(id));
 	    return "singleReview";

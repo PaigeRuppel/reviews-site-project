@@ -1,12 +1,70 @@
 body {
 	background-color: black;
 	color: white;
+	font-family: 'Bubbler One', sans-serif;
 }
 
-.title {
-	font-family: sans-serif;
+.page-title {
+	align-content: center;	
+	display: flex;
+	color: steelblue;
+	flex-wrap: nowrap;
+	flex: 1 1 75%;
+	font-size: 50px;
+	justify-content: center;
+}
+.main-logo {
+	display: flex;
+	margin: auto;	
 }
 
-.title a {
+.episode-title {
+	font-size: 30px;
+}
+
+.episode-title a {
 	text-decoration: none;
+	color: purple;
 }
+
+.episode-title a:hover {
+	color: lightblue;
+}
+
+
+.episode-info {
+	display: flex;
+	margin: 10px;
+	align-content: center;
+	justify-content: flex-start;	
+}
+
+.episode-info li {
+	list-style: none;
+	padding: 0px 20px;
+	font-size: 25px;
+}
+
+.description {
+	font-size: 20px;
+}
+
+.go-back-link {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	font-size: 18px;
+	text-decoration: none;
+	color: lightblue;
+}
+
+.go-back-link:hover {
+	color: white;
+}
+
+.copyright {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
