@@ -20,9 +20,11 @@
 			<li th:text="' Air Date: ' + ${reviews.airDate}"/>
 	</ul>
 	</h3>
-	<p class="description" th:text="'Description: ' + ${reviews.description}"/> 
+	<ul class="review-content">
+	<li><p class="description" th:text="'Description: ' + ${reviews.description}"/></li>
+	<li><img class="episodeImage" th:src="${reviews.imageUrl}"/></li>
+	</ul>
 	<p class="rating" th:text="'Episode Rating: ' + ${reviews.reviewRating}"/>
-	<img class="episodeImage" th:src="${reviews.imageUrl}"/>
 	</div>
 
 

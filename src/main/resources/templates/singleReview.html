@@ -9,18 +9,19 @@
 	<h1>Star Trek The Next Generation Season 5</h1>
 
 	<div class="review-container"> 
-	<h2 class="title" th:text="${review.episodeTitle}"/>
+	<h2 class="episode-title" th:text="${review.episodeTitle}"/>
 	<h3>
 	<ul class="episode-info">
 			<li th:text="' Episode: ' + ${review.episodeNumber}"/>
 			<li th:text="' Air Date: ' + ${review.airDate}"/>
 	</ul>
 	</h3>
-	<h3 class="episode" th:text="' Episode: ' + ${review.episodeNumber}"/>
-	<h4 class="date" th:text="'Air Date: ' + ${review.airDate}"/>
-	<p class="description" th:text="'Description: ' + ${review.description}"/> 
+	<ul class="review-content">
+	<li><p class="description" th:text="'Description: ' + ${review.description}"/></li>
+	<li><img class="episodeImage" th:src="${review.imageUrl}"/></li>
+	</ul>
 	<p class="rating" th:text="'Episode Rating: ' + ${review.reviewRating}"/>
-	<img class="episodeImage" th:src="${review.imageUrl}"/>
+	
 	</div>
 
 
