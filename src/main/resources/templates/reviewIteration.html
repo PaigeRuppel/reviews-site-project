@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Star Trek TNG Season 5 Reviews</title>
-<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Star Trek TNG Season 5 Reviews</title>
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 	<h1 class="page-title">Star Trek The Next Generation Season 5 Reviews</h1>
@@ -11,23 +11,23 @@
 	
 
 	<div class="review-container" th:each="reviews: ${reviewsAsCollection}"> 
-	<h2 class="episode-title">
-		<a th:href="@{/review(id=${reviews.id})}" th:text="${reviews.episodeTitle}"></a>
-	</h2>
-	<h3>
-	<ul class="episode-info">
-			<li th:text="' Episode: ' + ${reviews.episodeNumber}"/>
-			<li th:text="' Air Date: ' + ${reviews.airDate}"/>
-	</ul>
-	</h3>
-	<ul class="review-content">
-	<li><p class="description" th:text="'Description: ' + ${reviews.description}"/></li>
-	<li><img class="episodeImage" th:src="${reviews.imageUrl}"/></li>
-	</ul>
-	<p class="rating" th:text="'Episode Rating: ' + ${reviews.reviewRating}"/>
+		<h2 class="episode-title">
+			<a th:href="@{/review(id=${reviews.id})}" th:text="${reviews.episodeTitle}"></a>
+		</h2>
+		<h3>
+			<ul class="episode-info">
+				<li th:text="' Episode: ' + ${reviews.episodeNumber}"/>
+				<li th:text="' Air Date: ' + ${reviews.airDate}"/>
+			</ul>
+		</h3>
+		<ul class="review-content">
+			<li><p class="description" th:text="'Description: ' + ${reviews.description}"/></li>
+			<li><img class="episode-image" th:src="${reviews.imageUrl}"/></li>
+		</ul>
+			<p class="rating" th:text="'Episode Rating: ' + ${reviews.reviewRating}"/>
 	</div>
 
 
-<footer class="copyright">All STAR TREK trademarks and logos are owned by CBS Studios Inc.</footer>
+	<footer class="copyright">All STAR TREK trademarks and logos are owned by CBS Studios Inc.</footer>
 </body>
 </html>

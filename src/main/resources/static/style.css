@@ -2,6 +2,9 @@ body {
 	background-color: black;
 	color: white;
 	font-family: 'Bubbler One', sans-serif;
+	max-width: 1040px;
+	min-width: 950px;
+	margin: auto;
 }
 
 .page-title {
@@ -19,7 +22,8 @@ body {
 }
 
 .episode-title {
-	font-size: 30px;
+	font-size: 35px;
+	color: purple;
 }
 
 .episode-title a {
@@ -45,8 +49,30 @@ body {
 	font-size: 25px;
 }
 
+.review-content {
+	display: flex;
+}
+
+.review-content li {
+	list-style: none;
+	align-content: center;
+	justify-content: space-around
+	padding: 5px 25px;
+}
+
 .description {
 	font-size: 20px;
+	margin-right: 75px;
+}
+
+.episode-image {
+	margin-right: 60px;
+}
+
+.rating {
+	display: flex;
+	font-size: 20px;
+	margin: 10px;
 }
 
 .go-back-link {
